@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+h2,
+p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+img {
+    width: 3rem;
+    height: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #03a152  , #5df1ac);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.glass {
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    overflow: hidden;
+}
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 14rem;
+    width: 14rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: -1%;
+    right: 15%;
+  }
+  .circle2 {
+    bottom: 0%;
+    left: 10%;
+  }
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+        );
+    border-radius: 2rem;
+}
+
+.pic {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.sub {
+    font-size: 1.2rem;
+}
+
+.link {
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+.link h2 {
+    padding: 0rem 2rem;
+}
+
+.status {
+    margin-bottom: 3rem;
+  }
+  
+  .status input {
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+  }
+
+.techs {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient(
+      to left top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    );
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+}
+
+.card img {
+    margin-right: 1rem;
+}
+
+.progress1, .progress2{
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress1::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background:  rgb(236, 236, 236);
+    position: absolute;
+    left: 80%;
+}
+
+.progress2::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background:  rgb(236, 236, 236);
+    position: absolute;
+    left: 70%;
+}s
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-info h2 {
+    font-weight: 600;
+}
+
+.percentage {
+    font-weight: bold;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1200px) {
+    .glass {
+        width: 60%;
+        max-height: 100%;
+    }
+
+}
+
+@media (max-height: 900px) {
+    .glass {
+        max-height: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .glass {
+        width: 100%;
+        margin: 1.5rem;
+    }
+
+    .link h2 {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center
+    }
+
+    .card img {
+        margin: 0;
+    }
+    
+    .progress1, .progress2, .progress3 {
+        height: 1rem;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+}
